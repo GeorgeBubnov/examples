@@ -1,0 +1,6 @@
+services:
+  web:
+    name: web-app
+    image: my-app:latest
+    ports:
+      - 3000
