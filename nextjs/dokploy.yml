@@ -1,6 +1,7 @@
 services:
   web:
-    name: web-app
-    image: my-app:latest
+    build: .
     ports:
-      - 3000
+      - 3000:3000
+    env:
+      - NODE_ENV=production
